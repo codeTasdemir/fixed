@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
-            <a href="{{ route('manager_dashboard') }}" class="btn btn-dark btn-lg" type="submit">Back</a>
+            <a href="{{route('manager_dashboard')}}" class="btn btn-dark btn-lg" >Back</a>
             <form action="{{route('logout')}}" method="post" class="d-flex">
                 @csrf
                 <button class="btn btn-danger btn-lg" type="submit">Logout</button>

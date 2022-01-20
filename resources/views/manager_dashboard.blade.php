@@ -27,9 +27,9 @@
                 </div>
                 <div class="card-body">
                     <div class="list-group">
-                        <a href="{{route('employee_create')}}" type="button" class="list-group-item list-group-item-action lead">Create Employee</a>
-                        <a href="{{route('department_employee')}}" type="button" class="list-group-item list-group-item-action lead">My Department Employee</a>
-                        <a href="{{route('manager_account')}}" type="button" class="list-group-item list-group-item-action lead">My Account</a>
+                        <a href="{{ route('employee_create') }}" type="button" class="list-group-item list-group-item-action lead">Create Employee</a>
+                        <a href="{{ route('department_employee')}}" type="button" class="list-group-item list-group-item-action lead">My Department Employee</a>
+                        <a href="{{ route('manager_account') }}" type="button" class="list-group-item list-group-item-action lead">My Account</a>
                     </div>
                 </div>
             </div>

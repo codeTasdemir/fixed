@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 
 class managerController extends Controller
 {
+
     public function manager_control_panel(){
 
         $manager = Employee::with('dept_manager')->where([

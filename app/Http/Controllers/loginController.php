@@ -31,13 +31,13 @@ class loginController extends Controller
 
         if ($control) {
             $request->session()->put('userSessions', ['first_name' => $request->first_name , 'last_name'=> $request->last_name]);
-            return view('manager_dashboard',);
+            return redirect('/manager-dashboard',);
         }
 
         elseif ($control2){
 
             $request->session()->put('userSessions', [ 'first_name' => $request->first_name , 'last_name' => $request->last_name]);
-            return  view('employee_dashboard');
+            return  redirect('/employee-dashboard');
         }
 
         else {

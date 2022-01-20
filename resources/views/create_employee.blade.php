@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
-            <a href="{{ route('manager_dashboard') }}" class="btn btn-dark btn-lg" type="submit">Back</a>
+            <a href="{{route('manager_dashboard')}}" class="btn btn-dark btn-lg" >Back</a>
             <form action="{{route('logout')}}" method="post" class="d-flex">
                 @csrf
                 <button class="btn btn-danger btn-lg" type="submit">Logout</button>
@@ -57,7 +57,6 @@
                         @error('last_name') <p class="text-danger">{{$message}}</p> @enderror
                         <div class="mb-3">
                             <select class="form-select" name="gender" aria-label="">
-                                <option selected>Please Select Gender</option>
                                 <option value="F">Female</option>
                                 <option value="M">Male</option>
                             </select>
@@ -75,7 +74,6 @@
                         @error('hire_date') <p class="text-danger">{{$message}}</p> @enderror
                         <div class="mb-3">
                             <select class="form-select" name="title" aria-label="">
-                                <option selected>Please Select Title</option>
                                 @foreach($title_names as $title_name)
                                     <option value="{{$title_name->title}}">{{$title_name->title}}</option>
                                 @endforeach
